@@ -1,4 +1,5 @@
 -----User Registration API-----
+
 This endpoint allows for the registration of a new user in the system. It accepts user details in the request body and returns a response indicating the success or failure of the registration process.
 Request
 Method: POST
@@ -77,6 +78,7 @@ If registration fails, the response will include an error message detailing the 
 
 ________________________________________________________________________
 -----User Login API-----
+
 This endpoint allows users to log in to the application by providing their credentials. Upon successful authentication, the server returns a JSON Web Token (JWT) that can be used for subsequent requests requiring authentication.
 Endpoint
 POST /api/user/login
@@ -194,6 +196,7 @@ Users should input their credentials in the login form to authenticate and acces
 
 _________________________________________________________________________
 -----API Endpoint: Retrieve Products-----
+
 Request
 Method: GET
 URL: http://localhost:8080/api/product
