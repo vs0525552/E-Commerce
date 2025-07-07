@@ -396,7 +396,7 @@ This endpoint is essential for managing the user's shopping cart effectively, al
 
 
 _________________________________________________________________________
------Delete Product from Cart-----
+-----Minus Product from Cart-----
 
 This endpoint allows you to delete a specific product from the user's shopping cart using the product ID.
 Request
