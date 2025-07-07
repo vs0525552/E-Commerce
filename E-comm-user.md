@@ -513,4 +513,146 @@ Status Codes
 
 _________________________________________________________________________
 
+-----Retrieve Cart Information-----
+
+This endpoint retrieves the current user's shopping cart details.
+Request
+Method: GET
+URL: http://localhost:8080/api/cart
+
+Response
+Status Code: 200 OK
+Content-Type: application/json
+
+Response Body
+
+
+JSON
+
+
+
+
+
+
+
+
+{
+  "userId": "",
+  "products": [
+    {
+      "productId": "",
+      "name": "",
+      "description": "",
+      "price": 0,
+      "stockQuantity": 0,
+      "unit": null,
+      "vendorId": "",
+      "category": "",
+      "image": null
+    }
+  ],
+  "noOfItems": 0,
+  "totalAmount": 0
+}
+
+
+Response Fields
+userId: Identifier for the user.
+products: List of products in the cart.
+productId: Identifier for the product.
+name: Name of the product.
+description: Description of the product.
+price: Price of the product.
+stockQuantity: Available stock for the product.
+unit: Measurement unit for the product.
+vendorId: Identifier for the vendor.
+category: Category of the product.
+image: URL of the product image.
+
+noOfItems: Total number of items in the cart.
+totalAmount: Total cost of items in the cart.
+
+
+
+This endpoint retrieves the current state of the user's shopping cart. It provides details about the user, the products in the cart, the number of items, and the total amount.
+Request
+Method: GET
+URL: http://localhost:8080/api/cart
+
+Response
+Status Code: 200 OK
+Content-Type: application/json
+
+Response Body
+The response body returns a JSON object with the following structure:
+userId: (string) The unique identifier of the user.
+products: (array) A list of products currently in the cart. Each product object contains:
+productId: (string) The unique identifier of the product.
+name: (string) The name of the product.
+description: (string) A brief description of the product.
+price: (number) The price of the product.
+stockQuantity: (number) The quantity of the product available in stock.
+unit: (string|null) The unit of measurement for the product (if applicable).
+vendorId: (string) The unique identifier of the vendor supplying the product.
+category: (string) The category to which the product belongs.
+image: (string|null) A URL or path to the product's image (if available).
+
+noOfItems: (number) The total number of items in the cart.
+totalAmount: (number) The total monetary amount of the items in the cart.
+
+This structure allows clients to easily understand the contents of the cart and the associated details for each product.
+This endpoint retrieves the current user's shopping cart details. It returns information about the items in the cart, including product details, total number of items, and the total amount.
+Request
+Method: GET
+URL: http://localhost:8080/api/cart
+
+Response
+Status Code: 200 OK
+Content-Type: application/json
+
+Response Structure
+The response is a JSON object containing the following fields:
+userId: A string representing the unique identifier of the user.
+products: An array of product objects, each containing:
+productId: A string representing the unique identifier of the product.
+name: A string representing the name of the product.
+description: A string providing a description of the product.
+price: A number indicating the price of the product.
+stockQuantity: A number indicating the available stock quantity of the product.
+unit: A string representing the unit of measurement for the product (can be null).
+vendorId: A string representing the unique identifier of the vendor.
+category: A string indicating the category of the product.
+image: A string representing the URL of the product image (can be null).
+
+noOfItems: A number indicating the total number of items in the cart.
+totalAmount: A number representing the total amount for all items in the cart.
+
+This endpoint is useful for users to view their current cart status, including all products added, total items, and the overall cost.
+Request
+Method: GET
+Endpoint: /api/cart
+
+Description
+This endpoint retrieves the current user's shopping cart information. It is designed to provide details about the items in the cart, including product specifications and the total amount.
+Expected Response
+Upon a successful request, the server responds with a status code of 200 and a JSON object containing the following fields:
+userId (string): The identifier of the user associated with the cart.
+products (array): A list of products currently in the cart. Each product object includes:
+productId (string): The unique identifier for the product.
+name (string): The name of the product.
+description (string): A brief description of the product.
+price (number): The price of the product.
+stockQuantity (number): The quantity of the product available in stock.
+unit (string or null): The unit of measurement for the product (e.g., kg, lb).
+vendorId (string): The identifier for the vendor supplying the product.
+category (string): The category to which the product belongs.
+image (string or null): A URL or path to an image of the product.
+
+noOfItems (number): The total number of items in the cart.
+totalAmount (number): The total monetary amount of all items in the cart.
+
+This structured response allows clients to easily understand the contents of the cart and take further actions as needed.
+
+__________________________________________________________________________________________________________________________________________
+
 
