@@ -226,3 +226,291 @@ Ensure that the server is running and accessible at the specified URL to receive
 
 
 _________________________________________________________________________
+-----API Endpoint: Retrieve Product Details-----
+
+Method: GET
+URL: http://localhost:8080/api/product/{productId}
+This endpoint retrieves detailed information about a specific product based on its unique identifier (productId). The productId should be provided as part of the URL path.
+Request Parameters
+productId (path parameter): The unique identifier of the product you wish to retrieve. This should be a string that corresponds to the product's ID in the database.
+
+Response Structure
+On a successful request, the server responds with a JSON object containing the following fields:
+productId (string): The unique identifier for the product.
+name (string): The name of the product.
+description (string): A brief description of the product.
+price (number): The price of the product, represented as a numerical value.
+stockQuantity (number): The quantity of the product available in stock.
+unit (string or null): The unit of measurement for the product (e.g., "kg", "pcs"). This may be null if not applicable.
+vendorId (string): The identifier for the vendor supplying the product.
+category (string): The category to which the product belongs.
+image (string or null): A URL or path to the product image, which may be null if no image is available.
+
+Example Response
+
+
+JSON
+
+
+
+
+
+
+
+
+{
+  "productId": "",
+  "name": "",
+  "description": "",
+  "price": 0,
+  "stockQuantity": 0,
+  "unit": null,
+  "vendorId": "",
+  "category": "",
+  "image": null
+}
+
+
+This response structure provides a comprehensive overview of the product's details, allowing consumers of the API to understand the product's attributes effectively.
+
+
+Method: GET
+URL: http://localhost:8080/api/product/{productId}
+This endpoint retrieves detailed information about a specific product based on the provided productId. The productId is a unique identifier for the product in the database.
+Request Parameters
+productId (path parameter): A string representing the unique identifier of the product you wish to retrieve. This should be included in the URL.
+
+Response Structure
+On a successful request (HTTP Status 200), the response will be in JSON format and will include the following fields:
+productId: The unique identifier of the product (string).
+name: The name of the product (string).
+description: A brief description of the product (string).
+price: The price of the product (number).
+stockQuantity: The quantity of the product available in stock (number).
+unit: The unit of measurement for the product (string or null).
+vendorId: The identifier for the vendor supplying the product (string).
+category: The category to which the product belongs (string).
+image: A URL or path to the product image (string or null).
+
+This endpoint is useful for clients that need to display product details to users or for inventory management purposes.
+
+
+
+_________________________________________________________________________
+
+-----Add Item to Cart-----
+
+Update Cart API
+This endpoint allows you to update the cart for a specific product identified by the productId.
+Request
+Method: POST
+URL: /api/cart/{productId}
+
+Response
+The response will return a JSON object with the following structure:
+userId: (string) The ID of the user associated with the cart.
+products: (array) A list of products in the cart, each containing:
+productId: (string) The unique identifier for the product.
+name: (string) The name of the product.
+description: (string) A brief description of the product.
+price: (number) The price of the product.
+stockQuantity: (number) The available stock quantity of the product.
+unit: (string or null) The unit of measurement for the product.
+vendorId: (string) The ID of the vendor providing the product.
+category: (string) The category to which the product belongs.
+image: (string or null) A URL or path to the product image.
+
+noOfItems: (number) The total number of items in the cart.
+totalAmount: (number) The total amount for all items in the cart.
+
+Notes
+Ensure to replace {productId} in the URL with the actual product ID when making the request.
+
+
+This endpoint allows users to add items to their shopping cart. By sending a POST request to the specified URL, the user can update their cart with the desired product details.
+Request Parameters
+
+
+
+
+Expected Input
+The request body should include the following parameters in JSON format:
+userId (string): The identifier for the user who owns the cart.
+products (array): A list of products to be added to the cart, where each product object contains:
+productId (string): The unique identifier for the product.
+name (string): The name of the product.
+description (string): A brief description of the product.
+price (number): The price of the product.
+stockQuantity (number): The available stock quantity of the product.
+unit (string or null): The unit of measurement for the product (e.g., kg, pcs).
+vendorId (string): The identifier for the vendor of the product.
+category (string): The category under which the product falls.
+image (string or null): A URL or path to the product image.
+
+
+Response Structure
+Upon a successful request, the server responds with a JSON object containing the following fields:
+userId (string): The identifier of the user associated with the cart.
+products (array): An array of product objects currently in the cart, each containing the same fields as described in the input.
+noOfItems (number): The total number of items in the cart.
+totalAmount (number): The total monetary amount of all items in the cart.
+
+Example Response
+
+
+JSON
+
+
+
+
+
+
+
+
+{
+  "userId": "",
+  "products": [
+    {
+      "productId": "",
+      "name": "",
+      "description": "",
+      "price": 0,
+      "stockQuantity": 0,
+      "unit": null,
+      "vendorId": "",
+      "category": "",
+      "image": null
+    }
+  ],
+  "noOfItems": 0,
+  "totalAmount": 0
+}
+
+
+This endpoint is essential for managing the user's shopping cart effectively, allowing them to add products and view their cart's contents.
+
+
+
+
+
+
+
+_________________________________________________________________________
+-----Delete Product from Cart-----
+
+This endpoint allows you to delete a specific product from the user's shopping cart using the product ID.
+Request
+Method: DELETE
+URL: http://localhost:8080/api/cart/{productId}
+
+Path Parameters
+productId (string): The unique identifier of the product to be removed from the cart.
+
+Response
+Status Code: 200 OK
+Content-Type: application/json
+
+Response Body
+The response will return a JSON object with the following structure:
+userId (string): The ID of the user associated with the cart.
+products (array): An array containing the products currently in the cart. It will be empty if there are no products.
+noOfItems (integer): The total number of items in the cart after the deletion.
+totalAmount (number): The total monetary amount of the items in the cart after the deletion.
+
+Example Response
+
+
+JSON
+
+
+
+
+
+
+
+
+{
+    "userId": "",
+    "products": [],
+    "noOfItems": 0,
+    "totalAmount": 0
+}
+
+
+This endpoint is useful for managing the contents of a user's shopping cart by allowing the removal of specific products based on their unique product ID.
+
+
+This endpoint is used to delete a specified shopping cart from the system. The cart is identified by its unique cartId, which is provided in the URL path.
+Request Parameters
+cartId (path parameter): A string representing the unique identifier of the shopping cart to be deleted.
+
+Response Structure
+Upon successful deletion of the cart, the API responds with a status code of 200 and returns a JSON object containing the following fields:
+userId: A string representing the user associated with the cart. This will typically be empty if the cart is deleted.
+products: An array of products that were in the cart. This will be empty as the cart has been deleted.
+noOfItems: An integer indicating the number of items in the cart, which will be 0 after deletion.
+totalAmount: A numeric value representing the total amount of the cart, which will also be 0 after deletion.
+
+This endpoint is essential for managing the shopping cart functionality, allowing users to remove carts that are no longer needed.
+
+
+_________________________________________________________________________
+-----Delete Product from Cart-----
+
+This endpoint allows the user to remove a complete product from the shopping cart using the product ID. 
+Request
+Method: DELETE
+URL: http://localhost:8080/api/cart/{productId}/
+Replace {productId} with the ID of the product you wish to remove from the cart.
+
+
+Response
+Status Code: 200
+Content-Type: application/json
+Response Body:
+userId: Identifier for the user.
+products: An array of products currently in the cart, which will be empty if the product was successfully removed.
+productId: The ID of the product.
+name: The name of the product.
+description: A brief description of the product.
+price: The price of the product.
+stockQuantity: The quantity of the product available in stock.
+unit: The unit of measurement for the product (if applicable).
+vendorId: The ID of the vendor selling the product.
+category: The category under which the product is listed.
+image: A URL or path to the product image (if available).
+
+noOfItems: Total number of items remaining in the cart after the deletion.
+totalAmount: The total amount of the cart after the product removal.
+
+
+
+
+This endpoint is used to delete a specific cart identified by the cartId. It allows users to remove an entire shopping cart from the system.
+Request Parameters
+cartId (path parameter): The unique identifier of the cart that you want to delete. This is a required parameter and should be included in the URL.
+
+Response Structure
+Upon successful deletion of the cart, the API will return a JSON response with the following structure:
+userId: The ID of the user associated with the cart (string).
+products: An array of products that were in the cart. Each product object contains:
+productId: The unique identifier of the product (string).
+name: The name of the product (string).
+description: A brief description of the product (string).
+price: The price of the product (number).
+stockQuantity: The quantity of the product available in stock (number).
+unit: The unit of measurement for the product (string or null).
+vendorId: The ID of the vendor selling the product (string).
+category: The category to which the product belongs (string).
+image: A URL or path to the product image (string or null).
+
+noOfItems: The total number of items in the cart after deletion (number).
+totalAmount: The total monetary amount of the cart after deletion (number).
+
+Status Codes
+200 OK: The cart was successfully deleted, and the response contains the updated cart information.
+
+
+_________________________________________________________________________
+
+
