@@ -655,4 +655,63 @@ This structured response allows clients to easily understand the contents of the
 
 __________________________________________________________________________________________________________________________________________
 
+-----Forgot Password Endpoint------
 
+This endpoint allows users to reset their password by providing their registered email address. It is intended for users who have forgotten their password and need to initiate the password recovery process.
+Request
+Method: PUT
+URL: http://localhost:8080/api/user/forgotPassword
+ParameterTypeDescriptionemailstringThe email address associated with the user account.passwordstringThe new password that the user wishes to set.
+
+Example Request Body
+
+
+JSON
+
+
+
+
+
+
+
+
+{
+  "email": "user@example.com",
+  "password": "newPassword123"
+}
+
+
+Response
+Upon successful execution, the server will respond with a status code of 200 and a JSON object containing the following fields:
+FieldTypeDescriptionuserId
+
+
+Example Response
+
+
+JSON
+
+
+
+
+
+
+
+
+{
+  "userId": "",
+  "userName": "",
+  "email": "",
+  "password": null,
+  "address": null,
+  "role": "",
+  "registrationDate": ""
+}
+
+
+This response indicates that the password reset process was initiated successfully, but does not return sensitive user information.
+
+
+
+
+_____________________________________________________________________________________________________________________________________________
