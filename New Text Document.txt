@@ -1,0 +1,40 @@
+# -----------------------------
+# PowerShell Script: run-all-jars.ps1
+# -----------------------------
+# Description:
+# Runs all .jar files in the current folder using java -jar
+# Each JAR is launched in parallel using Start-Process
+# Logs are saved in the "logs" folder
+# -----------------------------
+
+# Create logs directory if not exists
+$logDir = Join-Path $PSScriptRoot "logs"
+if (-not (Test-Path $logDir)) {
+    New-Item -Path $logDir -ItemType Directory | Out-Null
+}
+
+# Get all .jar files in current folder
+$jarFiles = Get-ChildItem -Path $PSScriptRoot -Filter "*.jar"
+
+if ($jarFiles.Count -eq 0) {
+    Write-Host "❌ No JAR files found in current directory: $PSScriptRoot"
+    exit
+}
+
+# Launch each JAR in parallel with logging
+foreach ($jar in $jarFiles) {
+    $jarPath = $jar.FullName
+    $jarName = $jar.Name
+    $logFile = Join-Path $logDir ("$($jar.BaseName).log")
+
+    Write-Host "🚀 Starting $jarName ... Logging to: logs\$($jar.BaseName).log"
+
+    Start-Process `
+        -FilePath "java" `
+        -ArgumentList "-jar `"$jarPath`"" `
+        -RedirectStandardOutput $logFile `
+        -RedirectStandardError $logFile `
+        -WindowStyle Normal
+}
+
+Write-Host "`n✅ All JARs started. Logs are in 'logs/' folder."
