@@ -1,0 +1,48 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.3)
+
+2025-08-05T13:24:17.990+05:30  INFO 9372 --- [E-commerce] [           main] com.vss.app.ECommerceApplication         : Starting ECommerceApplication v1.0 using Java 23.0.1 with PID 9372 (D:\Workspace\E-Commerce\E-commerce-1.0.jar started by visha in D:\Workspace\E-Commerce)
+2025-08-05T13:24:17.994+05:30  INFO 9372 --- [E-commerce] [           main] com.vss.app.ECommerceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-05T13:24:18.812+05:30  INFO 9372 --- [E-commerce] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-08-05T13:24:18.893+05:30  INFO 9372 --- [E-commerce] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 9 MongoDB repository interfaces.
+2025-08-05T13:24:19.506+05:30  INFO 9372 --- [E-commerce] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8084 (http)
+2025-08-05T13:24:19.519+05:30  INFO 9372 --- [E-commerce] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-05T13:24:19.519+05:30  INFO 9372 --- [E-commerce] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-05T13:24:19.545+05:30  INFO 9372 --- [E-commerce] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-05T13:24:19.546+05:30  INFO 9372 --- [E-commerce] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1474 ms
+2025-08-05T13:24:19.738+05:30  INFO 9372 --- [E-commerce] [           main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/23.0.1+11-39"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@7412a438, com.mongodb.Jep395RecordCodecProvider@1e3ff233, com.mongodb.KotlinCodecProvider@3c952a33]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-08-05T13:24:19.769+05:30  INFO 9372 --- [E-commerce] [localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=23781700, minRoundTripTimeNanos=0}
+2025-08-05T13:24:20.395+05:30  INFO 9372 --- [E-commerce] [           main] com.vss.app.service.AdminService         : Admin service created !
+2025-08-05T13:24:20.398+05:30  INFO 9372 --- [E-commerce] [           main] com.vss.app.controller.AdminController   : AdminController created !
+2025-08-05T13:24:20.413+05:30  INFO 9372 --- [E-commerce] [           main] com.vss.app.service.CategoryService      : CategoryService initialized
+2025-08-05T13:24:20.414+05:30  INFO 9372 --- [E-commerce] [           main] c.vss.app.controller.CategoryController  : CategoryController initialized
+2025-08-05T13:24:20.466+05:30  INFO 9372 --- [E-commerce] [           main] com.vss.app.service.DeliveryBoyService   : DeliveryBoy service created !
+2025-08-05T13:24:20.467+05:30  INFO 9372 --- [E-commerce] [           main] c.v.a.controller.DeliveryBoyController   : DeliveryBoyController created !
+2025-08-05T13:24:20.543+05:30  INFO 9372 --- [E-commerce] [           main] c.vss.app.controller.VendorController    : VendorController initialized
+2025-08-05T13:24:20.546+05:30  INFO 9372 --- [E-commerce] [           main] com.vss.app.config.AppConfig             : Initializing BCryptPasswordEncoder bean
+2025-08-05T13:24:20.561+05:30  INFO 9372 --- [E-commerce] [           main] com.vss.app.config.AppConfig             : Initializing AuthenticationManager bean from AuthenticationConfiguration
+2025-08-05T13:24:20.607+05:30  INFO 9372 --- [E-commerce] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name vendorDetailsService
+2025-08-05T13:24:20.620+05:30  INFO 9372 --- [E-commerce] [           main] com.vss.app.service.UserService          : User service created !
+2025-08-05T13:24:20.726+05:30  INFO 9372 --- [E-commerce] [           main] com.vss.app.config.SecurityConfig        : Initializing security filter chain...
+2025-08-05T13:24:20.728+05:30  INFO 9372 --- [E-commerce] [           main] com.vss.app.config.SecurityConfig        : Defining CORS configuration source...
+2025-08-05T13:24:20.731+05:30  INFO 9372 --- [E-commerce] [           main] com.vss.app.config.SecurityConfig        : CORS allowed origins: [http://localhost, http://localhost:80, http://localhost:3000, http://localhost:5173]
+2025-08-05T13:24:20.733+05:30  INFO 9372 --- [E-commerce] [           main] com.vss.app.config.SecurityConfig        : CORS allowed methods: [GET, POST, PUT, DELETE, OPTIONS, PATCH]
+2025-08-05T13:24:20.734+05:30  INFO 9372 --- [E-commerce] [           main] com.vss.app.config.SecurityConfig        : CORS configuration applied to all endpoints
+2025-08-05T13:24:20.744+05:30  INFO 9372 --- [E-commerce] [           main] com.vss.app.config.SecurityConfig        : Setting security rules for HTTP requests
+2025-08-05T13:24:20.773+05:30  INFO 9372 --- [E-commerce] [           main] com.vss.app.config.WebConfig             : Configuring CORS for path pattern '/api/**'
+2025-08-05T13:24:20.775+05:30  INFO 9372 --- [E-commerce] [           main] com.vss.app.config.WebConfig             : CORS configuration applied: Origin=http://localhost:80, Methods=[GET, POST, PUT, DELETE, OPTIONS]
+2025-08-05T13:24:20.970+05:30  INFO 9372 --- [E-commerce] [           main] com.vss.app.config.SecurityConfig        : Registering authentication entry point for exception handling
+2025-08-05T13:24:20.972+05:30  INFO 9372 --- [E-commerce] [           main] com.vss.app.config.SecurityConfig        : Configuring stateless session management
+2025-08-05T13:24:20.973+05:30  INFO 9372 --- [E-commerce] [           main] com.vss.app.config.SecurityConfig        : JWT authentication filter registered
+2025-08-05T13:24:21.261+05:30  WARN 9372 --- [E-commerce] [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-08-05T13:24:21.290+05:30  INFO 9372 --- [E-commerce] [           main] .s.b.a.l.ConditionEvaluationRep2025-08-05T13:28:06.920+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-05T13:28:06.922+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-05T13:28:06.930+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2025-08-05T13:28:06.992+05:30  INFO 16876 --- [E-commerce] [0.0-80

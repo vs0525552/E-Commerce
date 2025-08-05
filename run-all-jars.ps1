@@ -1,38 +1,40 @@
-# -----------------------------
-# PowerShell Script: run-all-jars.ps1 (fixed version)
-# -----------------------------
+$basePath = "D:\Workspace\E-Commerce"  # Update as needed
 
-# Create logs directory if not exists
-$logDir = Join-Path $PSScriptRoot "logs"
-if (-not (Test-Path $logDir)) {
-    New-Item -Path $logDir -ItemType Directory | Out-Null
+$logDir = "$basePath\logs"
+if (-Not (Test-Path $logDir)) {
+    New-Item -ItemType Directory -Path $logDir | Out-Null
 }
 
-# Get all .jar files in current folder
-$jarFiles = Get-ChildItem -Path $PSScriptRoot -Filter "*.jar"
+function Start-Service {
+    param($name, $jar)
+    $jarPath = "$basePath\$jar"
+    $logOut = "$logDir\$name.out.log"
+    $logErr = "$logDir\$name.err.log"
 
-if ($jarFiles.Count -eq 0) {
-    Write-Host "❌ No JAR files found in current directory: $PSScriptRoot"
-    exit
+    if (Test-Path $jarPath) {
+        Write-Host "🚀 Starting $jar ... Logs: $logOut / $logErr"
+        Start-Process "java" -ArgumentList "-jar `"$jarPath`"" `
+            -RedirectStandardOutput $logOut `
+            -RedirectStandardError $logErr `
+            -WindowStyle Hidden
+        Start-Sleep -Seconds 10   # Wait 10 seconds for service to start
+    } else {
+        Write-Host "❌ JAR not found: $jarPath"
+    }
 }
 
-# Launch each JAR in parallel with logging
-foreach ($jar in $jarFiles) {
-    $jarPath = $jar.FullName
-    $jarName = $jar.Name
-    $stdoutLog = Join-Path $logDir ("$($jar.BaseName)-out.log")
-    $stderrLog = Join-Path $logDir ("$($jar.BaseName)-err.log")
+# 1. Check/Start MongoDB manually outside this script or start it here if needed.
+Write-Host "🔔 Make sure MongoDB is running on localhost:27017 before proceeding."
+Read-Host "Press Enter when MongoDB is ready..."
 
-    Write-Host "🚀 Starting $jarName ..."
-    Write-Host "   ↳ stdout: logs\$($jar.BaseName)-out.log"
-    Write-Host "   ↳ stderr: logs\$($jar.BaseName)-err.log"
+# 2. Start backend JARs one by one with delay
+Start-Service -name "Admin" -jar "E-comm-Admin-1.0.jar"
+Start-Service -name "User" -jar "E-comm-User-1.0.jar"
+Start-Service -name "Vendor" -jar "E-commerce-1.0.jar"
+Start-Service -name "DeliveryPartner" -jar "E-comm-delivery-partner-1.0.jar"
+Start-Service -name "DeliveryBoy" -jar "DieliveryBoy-1.0.jar"
 
-    Start-Process `
-        -FilePath "java" `
-        -ArgumentList "-jar `"$jarPath`"" `
-        -RedirectStandardOutput $stdoutLog `
-        -RedirectStandardError $stderrLog `
-        -WindowStyle Normal
-}
+# 3. Start frontend last
+Start-Service -name "FrontendServer" -jar "serve-0.0.1-SNAPSHOT.jar"
 
-Write-Host "`n✅ All JARs started. Check 'logs/' folder for output."
+Write-Host "`n✅ All services started in correct order. MongoDB must be running."

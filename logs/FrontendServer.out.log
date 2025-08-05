@@ -1,0 +1,35 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.4)
+
+2025-08-05T13:24:47.950+05:30  INFO 15136 --- [serve] [           main] com.example.demo.ServeApplication        : Starting ServeApplication v0.0.1-SNAPSHOT using Java 23.0.1 with PID 15136 (D:\Workspace\E-Commerce\serve-0.0.1-SNAPSHOT.jar started by visha in D:\Workspace\E-Commerce)
+2025-08-05T13:24:47.954+05:30  INFO 15136 --- [serve] [           main] com.example.demo.ServeApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-08-05T13:24:49.047+05:30  INFO 15136 --- [serve] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 80 (http)
+2025-08-05T13:24:49.060+05:30  INFO 15136 --- [serve] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-05T13:24:49.061+05:30  INFO 15136 --- [serve] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-05T13:24:49.093+05:30  INFO 15136 --- [serve] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-05T13:24:49.094+05:30  INFO 15136 --- [serve] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1069 ms
+2025-08-05T13:24:49.466+05:30  WARN 15136 --- [serve] [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-08-05T13:24:49.477+05:30  INFO 15136 --- [serve] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-05T13:24:49.493+05:30 ERROR 15136 --- [serve] [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 80 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 80 or configure this application to listen on another port.
+
