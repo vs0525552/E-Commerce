@@ -135,3 +135,44 @@ Action:
 
 Identify and stop the process that's listening on port 8084 or configure this application to listen on another port.
 
+| INFO |  ---   2025-08-05 13:28:06.920+05:30 --- [ http-nio-0.0.0.0-8084-exec-3 ]   [ o.a.c.c.C.[Tomcat].[localhost].[/] ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+| INFO |  ---   2025-08-05 13:28:06.922+05:30 --- [ http-nio-0.0.0.0-8084-exec-3 ]   [ o.s.web.servlet.DispatcherServlet ] : Initializing Servlet 'dispatcherServlet'
+| INFO |  ---   2025-08-05 13:28:06.930+05:30 --- [ http-nio-0.0.0.0-8084-exec-3 ]   [ o.s.web.servlet.DispatcherServlet ] : Completed initialization in 8 ms
+| INFO |  ---   2025-08-05 13:28:06.992+05:30 --- [ http-nio-0.0.0.0-8084-exec-4 ]   [ c.v.a.s.JwtAuthenticationFilter ] : Authorization Header: null
+| INFO |  ---   2025-08-05 13:28:06.993+05:30 --- [ http-nio-0.0.0.0-8084-exec-4 ]   [ c.v.a.s.JwtAuthenticationFilter ] : Invalid Authorization header value or header missing
+| INFO |  ---   2025-08-05 13:28:07.104+05:30 --- [ http-nio-0.0.0.0-8084-exec-4 ]   [ c.v.app.controller.VendorController ] : Login attempt for email: ram@gmail.com
+| INFO |  ---   2025-08-05 13:28:07.268+05:30 --- [ http-nio-0.0.0.0-8084-exec-4 ]   [ c.v.app.service.VendorDetailsService ] : Loading user by email: ram@gmail.com
+| INFO |  ---   2025-08-05 13:28:07.329+05:30 --- [ http-nio-0.0.0.0-8084-exec-4 ]   [ c.v.app.service.VendorDetailsService ] : Loading user by email: ram@gmail.com
+| INFO |  ---   2025-08-05 13:28:07.387+05:30 --- [ http-nio-0.0.0.0-8084-exec-4 ]   [ com.vss.app.security.JwtHelper ] : Generated JWT token for subject: ram@gmail.com
+| INFO |  ---   2025-08-05 13:28:07.387+05:30 --- [ http-nio-0.0.0.0-8084-exec-4 ]   [ c.v.app.controller.VendorController ] : Login successful for email: ram@gmail.com
+| INFO |  ---   2025-08-05 13:28:07.438+05:30 --- [ http-nio-0.0.0.0-8084-exec-8 ]   [ c.v.a.s.JwtAuthenticationFilter ] : Authorization Header: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyYW1AZ21haWwuY29tIiwiaWF0IjoxNzU0MzgwNjg3LCJleHAiOjE3NTQzOTg2ODd9.UMKQRZEOZLS_LEuf1Jqz-d9ZX1IQG_W_37zpH4q-4SpzRVANOLEFcc2F_53LQxEtafHYBCP9grCMkK6JMGnmIQ
+| INFO |  ---   2025-08-05 13:28:07.464+05:30 --- [ http-nio-0.0.0.0-8084-exec-6 ]   [ c.v.a.s.JwtAuthenticationFilter ] : Authorization Header: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyYW1AZ21haWwuY29tIiwiaWF0IjoxNzU0MzgwNjg3LCJleHAiOjE3NTQzOTg2ODd9.UMKQRZEOZLS_LEuf1Jqz-d9ZX1IQG_W_37zpH4q-4SpzRVANOLEFcc2F_53LQxEtafHYBCP9grCMkK6JMGnmIQ
+| INFO |  ---   2025-08-05 13:28:07.464+05:30 --- [ http-nio-0.0.0.0-8084-exec-5 ]   [ c.v.a.s.JwtAuthenticationFilter ] : Authorization Header: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyYW1AZ21haWwuY29tIiwiaWF0IjoxNzU0MzgwNjg3LCJleHAiOjE3NTQzOTg2ODd9.UMKQRZEOZLS_LEuf1Jqz-d9ZX1IQG_W_37zpH4q-4SpzRVANOLEFcc2F_53LQxEtafHYBCP9grCMkK6JMGnmIQ
+| INFO |  ---   2025-08-05 13:28:07.492+05:30 --- [ http-nio-0.0.0.0-8084-exec-8 ]   [ c.v.app.service.VendorDetailsService ] : Loading user by email: ram@gmail.com
+| INFO |  ---   2025-08-05 13:28:07.501+05:30 --- [ http-nio-0.0.0.0-8084-exec-6 ]   [ c.v.app.service.VendorDetailsService ] : Loading user by email: ram@gmail.com
+| INFO |  ---   2025-08-05 13:28:07.501+05:30 --- [ http-nio-0.0.0.0-8084-exec-5 ]   [ c.v.app.service.VendorDetailsService ] : Loading user by email: ram@gmail.com
+| INFO |  ---   2025-08-05 13:28:07.505+05:30 --- [ http-nio-0.0.0.0-8084-exec-8 ]   [ com.vss.app.security.JwtHelper ] : Token validation result for user ram@gmail.com : true
+| INFO |  ---   2025-08-05 13:28:07.508+05:30 --- [ http-nio-0.0.0.0-8084-exec-8 ]   [ c.v.a.s.JwtAuthenticationFilter ] : JWT Token validated successfully, authentication set for user: ram@gmail.com
+| INFO |  ---   2025-08-05 13:28:07.507+05:30 --- [ http-nio-0.0.0.0-8084-exec-5 ]   [ com.vss.app.security.JwtHelper ] : Token validation result for user ram@gmail.com : true
+| INFO |  ---   2025-08-05 13:28:07.507+05:30 --- [ http-nio-0.0.0.0-8084-exec-6 ]   [ com.vss.app.security.JwtHelper ] : Token validation result for user ram@gmail.com : true
+| INFO |  ---   2025-08-05 13:28:07.508+05:30 --- [ http-nio-0.0.0.0-8084-exec-5 ]   [ c.v.a.s.JwtAuthenticationFilter ] : JWT Token validated successfully, authentication set for user: ram@gmail.com
+| INFO |  ---   2025-08-05 13:28:07.508+05:30 --- [ http-nio-0.0.0.0-8084-exec-6 ]   [ c.v.a.s.JwtAuthenticationFilter ] : JWT Token validated successfully, authentication set for user: ram@gmail.com
+| INFO |  ---   2025-08-05 13:28:07.511+05:30 --- [ http-nio-0.0.0.0-8084-exec-6 ]   [ c.v.a.controller.DashBordController ] : Fetching vendor todays stats
+| INFO |  ---   2025-08-05 13:28:07.511+05:30 --- [ http-nio-0.0.0.0-8084-exec-5 ]   [ c.v.a.controller.DashBordController ] : Fetching vendor todays stats
+| INFO |  ---   2025-08-05 13:28:07.511+05:30 --- [ http-nio-0.0.0.0-8084-exec-8 ]   [ c.v.a.controller.DashBordController ] : Fetching vendor dashboard stats
+| INFO |  ---   2025-08-05 13:28:32.853+05:30 --- [ http-nio-0.0.0.0-8084-exec-3 ]   [ c.v.a.s.JwtAuthenticationFilter ] : Authorization Header: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyYW1AZ21haWwuY29tIiwiaWF0IjoxNzU0MzgwNjg3LCJleHAiOjE3NTQzOTg2ODd9.UMKQRZEOZLS_LEuf1Jqz-d9ZX1IQG_W_37zpH4q-4SpzRVANOLEFcc2F_53LQxEtafHYBCP9grCMkK6JMGnmIQ
+| INFO |  ---   2025-08-05 13:28:32.853+05:30 --- [ http-nio-0.0.0.0-8084-exec-4 ]   [ c.v.a.s.JwtAuthenticationFilter ] : Authorization Header: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyYW1AZ21haWwuY29tIiwiaWF0IjoxNzU0MzgwNjg3LCJleHAiOjE3NTQzOTg2ODd9.UMKQRZEOZLS_LEuf1Jqz-d9ZX1IQG_W_37zpH4q-4SpzRVANOLEFcc2F_53LQxEtafHYBCP9grCMkK6JMGnmIQ
+| INFO |  ---   2025-08-05 13:28:32.864+05:30 --- [ http-nio-0.0.0.0-8084-exec-4 ]   [ c.v.app.service.VendorDetailsService ] : Loading user by email: ram@gmail.com
+| INFO |  ---   2025-08-05 13:28:32.864+05:30 --- [ http-nio-0.0.0.0-8084-exec-3 ]   [ c.v.app.service.VendorDetailsService ] : Loading user by email: ram@gmail.com
+| INFO |  ---   2025-08-05 13:28:32.869+05:30 --- [ http-nio-0.0.0.0-8084-exec-3 ]   [ com.vss.app.security.JwtHelper ] : Token validation result for user ram@gmail.com : true
+| INFO |  ---   2025-08-05 13:28:32.869+05:30 --- [ http-nio-0.0.0.0-8084-exec-4 ]   [ com.vss.app.security.JwtHelper ] : Token validation result for user ram@gmail.com : true
+| INFO |  ---   2025-08-05 13:28:32.870+05:30 --- [ http-nio-0.0.0.0-8084-exec-3 ]   [ c.v.a.s.JwtAuthenticationFilter ] : JWT Token validated successfully, authentication set for user: ram@gmail.com
+| INFO |  ---   2025-08-05 13:28:32.870+05:30 --- [ http-nio-0.0.0.0-8084-exec-4 ]   [ c.v.a.s.JwtAuthenticationFilter ] : JWT Token validated successfully, authentication set for user: ram@gmail.com
+| INFO |  ---   2025-08-05 13:28:32.871+05:30 --- [ http-nio-0.0.0.0-8084-exec-3 ]   [ c.v.a.controller.CategoryController ] : Fetching all categories
+| INFO |  ---   2025-08-05 13:28:32.871+05:30 --- [ http-nio-0.0.0.0-8084-exec-3 ]   [ com.vss.app.service.CategoryService ] : Fetching all categories
+| INFO |  ---   2025-08-05 13:28:32.871+05:30 --- [ http-nio-0.0.0.0-8084-exec-4 ]   [ c.v.app.controller.ProductController ] : Fetching all products for vendor ID: ram@gmail.com
+| INFO |  ---   2025-08-05 13:28:32.874+05:30 --- [ http-nio-0.0.0.0-8084-exec-4 ]   [ c.v.app.controller.ProductController ] : Found 0 products for vendor ID: ram@gmail.com
+| INFO |  ---   2025-08-05 13:28:33.587+05:30 --- [ http-nio-0.0.0.0-8084-exec-2 ]   [ c.v.a.s.JwtAuthenticationFilter ] : Authorization Header: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyYW1AZ21haWwuY29tIiwiaWF0IjoxNzU0MzgwNjg3LCJleHAiOjE3NTQzOTg2ODd9.UMKQRZEOZLS_LEuf1Jqz-d9ZX1IQG_W_37zpH4q-4SpzRVANOLEFcc2F_53LQxEtafHYBCP9grCMkK6JMGnmIQ
+| INFO |  ---   2025-08-05 13:28:33.596+05:30 --- [ http-nio-0.0.0.0-8084-exec-2 ]   [ c.v.app.service.VendorDetailsService ] : Loading user by email: ram@gmail.com
+| INFO |  ---   2025-08-05 13:28:33.600+05:30 --- [ http-nio-0.0.0.0-8084-exec-2 ]   [ com.vss.app.security.JwtHelper ] : Token validation result for user ram@gmail.com : true
+| INFO |  ---   2025-08-05 13:28:33.600+05:30 --- [ http-nio-0.0.0.0-8084-exec-2 ]   [ c.v.a.s.JwtAuthenticationFilter ] : JWT Token validated successfully, authentication set for user: ram@gmail.com

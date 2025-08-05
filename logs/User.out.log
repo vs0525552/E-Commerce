@@ -59,3 +59,100 @@ Action:
 
 Identify and stop the process that's listening on port 8083 or configure this application to listen on another port.
 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     2025-08-05T13:26:24.174+05:30  INFO 2496 --- [E-comm-user] [io-8083-exec-10] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: null
+2025-08-05T13:26:24.174+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-6] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: null
+2025-08-05T13:26:24.174+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-4] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: null
+2025-08-05T13:26:24.174+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-9] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: null
+2025-08-05T13:26:24.177+05:30  INFO 2496 --- [E-comm-user] [io-8083-exec-10] c.v.a.security.JwtAuthenticationFilter   : Invalid Authorization header value or header missing
+2025-08-05T13:26:24.177+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-4] c.v.a.security.JwtAuthenticationFilter   : Invalid Authorization header value or header missing
+2025-08-05T13:26:24.177+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-6] c.v.a.security.JwtAuthenticationFilter   : Invalid Authorization header value or header missing
+2025-08-05T13:26:24.177+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-9] c.v.a.security.JwtAuthenticationFilter   : Invalid Authorization header value or header missing
+2025-08-05T13:26:24.212+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-3] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: null
+2025-08-05T13:26:24.212+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-3] c.v.a.security.JwtAuthenticationFilter   : Invalid Authorization header value or header missing
+2025-08-05T13:26:24.214+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-3] com.vss.app.Service.CategoryService      : Fetching all categories
+2025-08-05T13:26:24.215+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-5] c.vss.app.controller.ProductController   : Received request to get all products
+2025-08-05T13:26:24.216+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-5] com.vss.app.Service.ProductService       : Fetching all products from the database
+2025-08-05T13:26:24.224+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-5] com.vss.app.Service.ProductService       : Fetched 2 products
+2025-08-05T13:26:24.224+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-5] c.vss.app.controller.ProductController   : Returning 2 products
+2025-08-05T13:26:24.229+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-2] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: null
+2025-08-05T13:26:24.230+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-2] c.v.a.security.JwtAuthenticationFilter   : Invalid Authorization header value or header missing
+2025-08-05T13:26:24.232+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-2] com.vss.app.Service.CategoryService      : Fetching all categories
+2025-08-05T13:26:24.250+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-7] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: null
+2025-08-05T13:26:24.251+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-7] c.v.a.security.JwtAuthenticationFilter   : Invalid Authorization header value or header missing
+2025-08-05T13:26:24.253+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-7] com.vss.app.Service.CategoryService      : Fetching all categories
+2025-08-05T13:26:24.263+05:30  WARN 2496 --- [E-comm-user] [nio-8083-exec-8] c.v.a.s.JwtAuthenticationEntryPoint      : Unauthorized access attempt: Full authentication is required to access this resource
+2025-08-05T13:26:24.277+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-1] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: null
+2025-08-05T13:26:24.277+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-1] c.v.a.security.JwtAuthenticationFilter   : Invalid Authorization header value or header missing
+2025-08-05T13:26:39.358+05:30  INFO 2496 --- [E-comm-user] [io-8083-exec-10] com.vss.app.controller.UserController    : Login attempt for email: vss234@gamil.com
+2025-08-05T13:26:39.826+05:30  WARN 2496 --- [E-comm-user] [io-8083-exec-10] com.vss.app.controller.UserController    : Authentication failed for email: vss234@gamil.com
+2025-08-05T13:26:39.827+05:30  WARN 2496 --- [E-comm-user] [io-8083-exec-10] com.vss.app.controller.UserController    : Login failed - Invalid credentials for email: vss234@gamil.com
+2025-08-05T13:27:02.125+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-6] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: null
+2025-08-05T13:27:02.126+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-6] c.v.a.security.JwtAuthenticationFilter   : Invalid Authorization header value or header missing
+2025-08-05T13:27:02.130+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-4] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: null
+2025-08-05T13:27:02.130+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-3] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: null
+2025-08-05T13:27:02.131+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-2] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: null
+2025-08-05T13:27:02.133+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-3] c.v.a.security.JwtAuthenticationFilter   : Invalid Authorization header value or header missing
+2025-08-05T13:27:02.132+05:30  WARN 2496 --- [E-comm-user] [nio-8083-exec-5] c.v.a.s.JwtAuthenticationEntryPoint      : Unauthorized access attempt: Full authentication is required to access this resource
+2025-08-05T13:27:02.133+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-2] c.v.a.security.JwtAuthenticationFilter   : Invalid Authorization header value or header missing
+2025-08-05T13:27:02.133+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-4] c.v.a.security.JwtAuthenticationFilter   : Invalid Authorization header value or header missing
+2025-08-05T13:27:02.135+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-2] com.vss.app.Service.CategoryService      : Fetching all categories
+2025-08-05T13:27:02.155+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-7] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: null
+2025-08-05T13:27:02.156+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-7] c.v.a.security.JwtAuthenticationFilter   : Invalid Authorization header value or header missing
+2025-08-05T13:27:02.159+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-7] com.vss.app.Service.CategoryService      : Fetching all categories
+2025-08-05T13:27:02.161+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-8] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: null
+2025-08-05T13:27:02.163+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-8] c.v.a.security.JwtAuthenticationFilter   : Invalid Authorization header value or header missing
+2025-08-05T13:27:05.999+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-1] c.vss.app.controller.ProductController   : Received request to get product
+2025-08-05T13:27:06.014+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-1] c.vss.app.controller.ProductController   : Returning product
+2025-08-05T13:27:06.028+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-5] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: null
+2025-08-05T13:27:06.029+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-6] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: null
+2025-08-05T13:27:06.030+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-3] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: null
+2025-08-05T13:27:06.030+05:30  WARN 2496 --- [E-comm-user] [nio-8083-exec-9] c.v.a.s.JwtAuthenticationEntryPoint      : Unauthorized access attempt: Full authentication is required to access this resource
+2025-08-05T13:27:06.030+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-5] c.v.a.security.JwtAuthenticationFilter   : Invalid Authorization header value or header missing
+2025-08-05T13:27:06.030+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-6] c.v.a.security.JwtAuthenticationFilter   : Invalid Authorization header value or header missing
+2025-08-05T13:27:06.031+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-3] c.v.a.security.JwtAuthenticationFilter   : Invalid Authorization header value or header missing
+2025-08-05T13:27:06.031+05:30  WARN 2496 --- [E-comm-user] [io-8083-exec-10] c.v.a.s.JwtAuthenticationEntryPoint      : Unauthorized access attempt: Full authentication is required to access this resource
+2025-08-05T13:27:06.078+05:30  WARN 2496 --- [E-comm-user] [nio-8083-exec-4] c.v.a.s.JwtAuthenticationEntryPoint      : Unauthorized access attempt: Full authentication is required to access this resource
+2025-08-05T13:27:08.652+05:30  WARN 2496 --- [E-comm-user] [nio-8083-exec-2] c.v.a.s.JwtAuthenticationEntryPoint      : Unauthorized access attempt: Full authentication is required to access this resource
+2025-08-05T13:27:33.556+05:30  WARN 2496 --- [E-comm-user] [nio-8083-exec-7] c.v.a.s.JwtAuthenticationEntryPoint      : Unauthorized access attempt: Full authentication is required to access this resource
+2025-08-05T13:27:34.523+05:30  WARN 2496 --- [E-comm-user] [nio-8083-exec-8] c.v.a.s.JwtAuthenticationEntryPoint      : Unauthorized access attempt: Full authentication is required to access this resource
+2025-08-05T13:27:35.308+05:30  WARN 2496 --- [E-comm-user] [nio-8083-exec-1] c.v.a.s.JwtAuthenticationEntryPoint      : Unauthorized access attempt: Full authentication is required to access this resource
+2025-08-05T13:27:36.369+05:30  WARN 2496 --- [E-comm-user] [nio-8083-exec-9] c.v.a.s.JwtAuthenticationEntryPoint      : Unauthorized access attempt: Full authentication is required to access this resource
+2025-08-05T13:27:37.671+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-5] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: null
+2025-08-05T13:27:37.671+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-3] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: null
+2025-08-05T13:27:37.672+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-5] c.v.a.security.JwtAuthenticationFilter   : Invalid Authorization header value or header missing
+2025-08-05T13:27:37.671+05:30  INFO 2496 --- [E-comm-user] [io-8083-exec-10] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: null
+2025-08-05T13:27:37.672+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-3] c.v.a.security.JwtAuthenticationFilter   : Invalid Authorization header value or header missing
+2025-08-05T13:27:37.673+05:30  INFO 2496 --- [E-comm-user] [io-8083-exec-10] c.v.a.security.JwtAuthenticationFilter   : Invalid Authorization header value or header missing
+2025-08-05T13:27:37.672+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-6] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: null
+2025-08-05T13:27:37.674+05:30  INFO 2496 --- [E-comm-user] [io-8083-exec-10] com.vss.app.Service.CategoryService      : Fetching all categories
+2025-08-05T13:27:37.674+05:30  WARN 2496 --- [E-comm-user] [nio-8083-exec-4] c.v.a.s.JwtAuthenticationEntryPoint      : Unauthorized access attempt: Full authentication is required to access this resource
+2025-08-05T13:27:37.674+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-6] c.v.a.security.JwtAuthenticationFilter   : Invalid Authorization header value or header missing
+2025-08-05T13:27:37.692+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-2] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: null
+2025-08-05T13:27:37.692+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-2] c.v.a.security.JwtAuthenticationFilter   : Invalid Authorization header value or header missing
+2025-08-05T13:27:37.695+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-2] com.vss.app.Service.CategoryService      : Fetching all categories
+2025-08-05T13:27:37.697+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-7] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: null
+2025-08-05T13:27:37.698+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-7] c.v.a.security.JwtAuthenticationFilter   : Invalid Authorization header value or header missing
+2025-08-05T13:28:40.490+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-8] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: null
+2025-08-05T13:28:40.490+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-7] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: null
+2025-08-05T13:28:40.491+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-7] c.v.a.security.JwtAuthenticationFilter   : Invalid Authorization header value or header missing
+2025-08-05T13:28:40.489+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-2] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: null
+2025-08-05T13:28:40.494+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-2] c.v.a.security.JwtAuthenticationFilter   : Invalid Authorization header value or header missing
+2025-08-05T13:28:40.490+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-6] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: null
+2025-08-05T13:28:40.492+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-8] c.v.a.security.JwtAuthenticationFilter   : Invalid Authorization header value or header missing
+2025-08-05T13:28:40.497+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-6] c.v.a.security.JwtAuthenticationFilter   : Invalid Authorization header value or header missing
+2025-08-05T13:28:40.530+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-9] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: null
+2025-08-05T13:28:40.531+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-9] c.v.a.security.JwtAuthenticationFilter   : Invalid Authorization header value or header missing
+2025-08-05T13:28:40.533+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-9] com.vss.app.Service.CategoryService      : Fetching all categories
+2025-08-05T13:28:40.542+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-3] c.vss.app.controller.ProductController   : Received request to get all products
+2025-08-05T13:28:40.543+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-3] com.vss.app.Service.ProductService       : Fetching all products from the database
+2025-08-05T13:28:40.550+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-3] com.vss.app.Service.ProductService       : Fetched 2 products
+2025-08-05T13:28:40.551+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-3] c.vss.app.controller.ProductController   : Returning 2 products
+2025-08-05T13:28:40.569+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-1] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: null
+2025-08-05T13:28:40.574+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-1] c.v.a.security.JwtAuthenticationFilter   : Invalid Authorization header value or header missing
+2025-08-05T13:28:40.580+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-1] com.vss.app.Service.CategoryService      : Fetching all categories
+2025-08-05T13:28:40.593+05:30  INFO 2496 --- [E-comm-user] [io-8083-exec-10] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: null
+2025-08-05T13:28:40.593+05:30  WARN 2496 --- [E-comm-user] [nio-8083-exec-4] c.v.a.s.JwtAuthenticationEntryPoint      : Unauthorized access attempt: Full authentication is required to access this resource
+2025-08-05T13:28:40.594+05:30  INFO 2496 --- [E-comm-user] [io-8083-exec-10] c.v.a.security.JwtAuthenticationFilter   : Invalid Authorization header value or header missing
+2025-08-05T13:28:40.597+05:30  INFO 2496 --- [E-comm-user] [io-8083-exec-10] com.vss.app.Service.CategoryService      : Fetching all categories
+2025-08-05T13:28:40.613+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-5] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: null
+2025-08-05T13:28:40.614+05:30  INFO 2496 --- [E-comm-user] [nio-8083-exec-5] c.v.a.security.JwtAuthenticationFilter   : Invalid Authorization header value or header missing

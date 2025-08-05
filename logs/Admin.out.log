@@ -46,4 +46,27 @@
 2025-08-05T13:25:14.496+05:30  INFO 17196 --- [E-comm-Admin] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2025-08-05T13:25:14.497+05:30  INFO 17196 --- [E-comm-Admin] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2025-08-05T13:25:14.498+05:30  INFO 17196 --- [E-comm-Admin] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-08-05T13:25:14.541+05:30  INFO 17196 --- [
+2025-08-05T13:25:14.541+05:30  INFO 17196 --- [E-comm-Admin] [nio-8080-exec-2] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: null
+2025-08-05T13:25:14.542+05:30  INFO 17196 --- [E-comm-Admin] [nio-8080-exec-2] c.v.a.security.JwtAuthenticationFilter   : Invalid Authorization header value or header missing
+2025-08-05T13:25:14.627+05:30  INFO 17196 --- [E-comm-Admin] [nio-8080-exec-2] com.vss.app.controller.AdminController   : Login attempt for email: admin@localhost.com
+2025-08-05T13:25:14.627+05:30  INFO 17196 --- [E-comm-Admin] [nio-8080-exec-2] com.vss.app.service.AdminService         : Authenticating user with email: admin@localhost.com
+2025-08-05T13:25:14.706+05:30  INFO 17196 --- [E-comm-Admin] [nio-8080-exec-2] c.vss.app.service.AdminDetailsService    : Loading user by email: admin@localhost.com
+2025-08-05T13:25:14.709+05:30  WARN 17196 --- [E-comm-Admin] [nio-8080-exec-2] c.vss.app.service.AdminDetailsService    : User not found with email: admin@localhost.com
+2025-08-05T13:25:14.770+05:30  WARN 17196 --- [E-comm-Admin] [nio-8080-exec-2] com.vss.app.service.AdminService         : Authentication failed for email: admin@localhost.com
+2025-08-05T13:25:14.771+05:30  WARN 17196 --- [E-comm-Admin] [nio-8080-exec-2] com.vss.app.controller.AdminController   : Login failed - Invalid credentials for email: admin@localhost.com
+2025-08-05T13:25:43.249+05:30  INFO 17196 --- [E-comm-Admin] [nio-8080-exec-5] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: null
+2025-08-05T13:25:43.251+05:30  INFO 17196 --- [E-comm-Admin] [nio-8080-exec-5] c.v.a.security.JwtAuthenticationFilter   : Invalid Authorization header value or header missing
+2025-08-05T13:25:43.256+05:30  WARN 17196 --- [E-comm-Admin] [nio-8080-exec-5] c.v.a.s.JwtAuthenticationEntryPoint      : Unauthorized access attempt: Full authentication is required to access this resource
+2025-08-05T13:25:54.881+05:30  INFO 17196 --- [E-comm-Admin] [io-8080-exec-10] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: null
+2025-08-05T13:25:54.882+05:30  INFO 17196 --- [E-comm-Admin] [io-8080-exec-10] c.v.a.security.JwtAuthenticationFilter   : Invalid Authorization header value or header missing
+2025-08-05T13:25:54.884+05:30  INFO 17196 --- [E-comm-Admin] [io-8080-exec-10] com.vss.app.controller.AdminController   : Login attempt for email: admin@localhost.com
+2025-08-05T13:25:54.884+05:30  INFO 17196 --- [E-comm-Admin] [io-8080-exec-10] com.vss.app.service.AdminService         : Authenticating user with email: admin@localhost.com
+2025-08-05T13:25:54.885+05:30  INFO 17196 --- [E-comm-Admin] [io-8080-exec-10] c.vss.app.service.AdminDetailsService    : Loading user by email: admin@localhost.com
+2025-08-05T13:25:54.888+05:30  WARN 17196 --- [E-comm-Admin] [io-8080-exec-10] c.vss.app.service.AdminDetailsService    : User not found with email: admin@localhost.com
+2025-08-05T13:25:54.950+05:30  WARN 17196 --- [E-comm-Admin] [io-8080-exec-10] com.vss.app.service.AdminService         : Authentication failed for email: admin@localhost.com
+2025-08-05T13:25:54.950+05:30  WARN 17196 --- [E-comm-Admin] [io-8080-exec-10] com.vss.app.controller.AdminController   : Login failed - Invalid credentials for email: admin@localhost.com
+2025-08-05T15:03:25.703+05:30  INFO 17196 --- [E-comm-Admin] [nio-8080-exec-4] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: null
+2025-08-05T15:03:25.751+05:30  INFO 17196 --- [E-comm-Admin] [nio-8080-exec-4] c.v.a.security.JwtAuthenticationFilter   : Invalid Authorization header value or header missing
+2025-08-05T15:03:25.875+05:30  INFO 17196 --- [E-comm-Admin] [nio-8080-exec-4] com.vss.app.controller.AdminController   : Login attempt for email: admin@gmail.com
+2025-08-05T15:03:25.877+05:30  INFO 17196 --- [E-comm-Admin] [nio-8080-exec-4] com.vss.app.service.AdminService         : Authenticating user with email: admin@gmail.com
+2025-08-05T15:03:25.880+05:30  INFO 17196 --- [E-comm-Admin] [nio-8080-exec-4] c.vss.app.service.AdminDetailsService    : Loading user by email: admin@gmail.com

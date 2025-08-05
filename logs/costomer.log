@@ -213,3 +213,100 @@ Action:
 
 Identify and stop the process that's listening on port 8083 or configure this application to listen on another port.
 
+2025-08-05 13:26:24 [http-nio-8083-exec-10] INFO  c.v.a.s.JwtAuthenticationFilter - Authorization Header: null
+2025-08-05 13:26:24 [http-nio-8083-exec-6] INFO  c.v.a.s.JwtAuthenticationFilter - Authorization Header: null
+2025-08-05 13:26:24 [http-nio-8083-exec-4] INFO  c.v.a.s.JwtAuthenticationFilter - Authorization Header: null
+2025-08-05 13:26:24 [http-nio-8083-exec-9] INFO  c.v.a.s.JwtAuthenticationFilter - Authorization Header: null
+2025-08-05 13:26:24 [http-nio-8083-exec-10] INFO  c.v.a.s.JwtAuthenticationFilter - Invalid Authorization header value or header missing
+2025-08-05 13:26:24 [http-nio-8083-exec-4] INFO  c.v.a.s.JwtAuthenticationFilter - Invalid Authorization header value or header missing
+2025-08-05 13:26:24 [http-nio-8083-exec-6] INFO  c.v.a.s.JwtAuthenticationFilter - Invalid Authorization header value or header missing
+2025-08-05 13:26:24 [http-nio-8083-exec-9] INFO  c.v.a.s.JwtAuthenticationFilter - Invalid Authorization header value or header missing
+2025-08-05 13:26:24 [http-nio-8083-exec-3] INFO  c.v.a.s.JwtAuthenticationFilter - Authorization Header: null
+2025-08-05 13:26:24 [http-nio-8083-exec-3] INFO  c.v.a.s.JwtAuthenticationFilter - Invalid Authorization header value or header missing
+2025-08-05 13:26:24 [http-nio-8083-exec-3] INFO  com.vss.app.Service.CategoryService - Fetching all categories
+2025-08-05 13:26:24 [http-nio-8083-exec-5] INFO  c.v.app.controller.ProductController - Received request to get all products
+2025-08-05 13:26:24 [http-nio-8083-exec-5] INFO  com.vss.app.Service.ProductService - Fetching all products from the database
+2025-08-05 13:26:24 [http-nio-8083-exec-5] INFO  com.vss.app.Service.ProductService - Fetched 2 products
+2025-08-05 13:26:24 [http-nio-8083-exec-5] INFO  c.v.app.controller.ProductController - Returning 2 products
+2025-08-05 13:26:24 [http-nio-8083-exec-2] INFO  c.v.a.s.JwtAuthenticationFilter - Authorization Header: null
+2025-08-05 13:26:24 [http-nio-8083-exec-2] INFO  c.v.a.s.JwtAuthenticationFilter - Invalid Authorization header value or header missing
+2025-08-05 13:26:24 [http-nio-8083-exec-2] INFO  com.vss.app.Service.CategoryService - Fetching all categories
+2025-08-05 13:26:24 [http-nio-8083-exec-7] INFO  c.v.a.s.JwtAuthenticationFilter - Authorization Header: null
+2025-08-05 13:26:24 [http-nio-8083-exec-7] INFO  c.v.a.s.JwtAuthenticationFilter - Invalid Authorization header value or header missing
+2025-08-05 13:26:24 [http-nio-8083-exec-7] INFO  com.vss.app.Service.CategoryService - Fetching all categories
+2025-08-05 13:26:24 [http-nio-8083-exec-8] WARN  c.v.a.s.JwtAuthenticationEntryPoint - Unauthorized access attempt: Full authentication is required to access this resource
+2025-08-05 13:26:24 [http-nio-8083-exec-1] INFO  c.v.a.s.JwtAuthenticationFilter - Authorization Header: null
+2025-08-05 13:26:24 [http-nio-8083-exec-1] INFO  c.v.a.s.JwtAuthenticationFilter - Invalid Authorization header value or header missing
+2025-08-05 13:26:39 [http-nio-8083-exec-10] INFO  c.vss.app.controller.UserController - Login attempt for email: vss234@gamil.com
+2025-08-05 13:26:39 [http-nio-8083-exec-10] WARN  c.vss.app.controller.UserController - Authentication failed for email: vss234@gamil.com
+2025-08-05 13:26:39 [http-nio-8083-exec-10] WARN  c.vss.app.controller.UserController - Login failed - Invalid credentials for email: vss234@gamil.com
+2025-08-05 13:27:02 [http-nio-8083-exec-6] INFO  c.v.a.s.JwtAuthenticationFilter - Authorization Header: null
+2025-08-05 13:27:02 [http-nio-8083-exec-6] INFO  c.v.a.s.JwtAuthenticationFilter - Invalid Authorization header value or header missing
+2025-08-05 13:27:02 [http-nio-8083-exec-3] INFO  c.v.a.s.JwtAuthenticationFilter - Authorization Header: null
+2025-08-05 13:27:02 [http-nio-8083-exec-2] INFO  c.v.a.s.JwtAuthenticationFilter - Authorization Header: null
+2025-08-05 13:27:02 [http-nio-8083-exec-4] INFO  c.v.a.s.JwtAuthenticationFilter - Authorization Header: null
+2025-08-05 13:27:02 [http-nio-8083-exec-5] WARN  c.v.a.s.JwtAuthenticationEntryPoint - Unauthorized access attempt: Full authentication is required to access this resource
+2025-08-05 13:27:02 [http-nio-8083-exec-3] INFO  c.v.a.s.JwtAuthenticationFilter - Invalid Authorization header value or header missing
+2025-08-05 13:27:02 [http-nio-8083-exec-2] INFO  c.v.a.s.JwtAuthenticationFilter - Invalid Authorization header value or header missing
+2025-08-05 13:27:02 [http-nio-8083-exec-4] INFO  c.v.a.s.JwtAuthenticationFilter - Invalid Authorization header value or header missing
+2025-08-05 13:27:02 [http-nio-8083-exec-2] INFO  com.vss.app.Service.CategoryService - Fetching all categories
+2025-08-05 13:27:02 [http-nio-8083-exec-7] INFO  c.v.a.s.JwtAuthenticationFilter - Authorization Header: null
+2025-08-05 13:27:02 [http-nio-8083-exec-7] INFO  c.v.a.s.JwtAuthenticationFilter - Invalid Authorization header value or header missing
+2025-08-05 13:27:02 [http-nio-8083-exec-7] INFO  com.vss.app.Service.CategoryService - Fetching all categories
+2025-08-05 13:27:02 [http-nio-8083-exec-8] INFO  c.v.a.s.JwtAuthenticationFilter - Authorization Header: null
+2025-08-05 13:27:02 [http-nio-8083-exec-8] INFO  c.v.a.s.JwtAuthenticationFilter - Invalid Authorization header value or header missing
+2025-08-05 13:27:05 [http-nio-8083-exec-1] INFO  c.v.app.controller.ProductController - Received request to get product
+2025-08-05 13:27:06 [http-nio-8083-exec-1] INFO  c.v.app.controller.ProductController - Returning product
+2025-08-05 13:27:06 [http-nio-8083-exec-5] INFO  c.v.a.s.JwtAuthenticationFilter - Authorization Header: null
+2025-08-05 13:27:06 [http-nio-8083-exec-6] INFO  c.v.a.s.JwtAuthenticationFilter - Authorization Header: null
+2025-08-05 13:27:06 [http-nio-8083-exec-3] INFO  c.v.a.s.JwtAuthenticationFilter - Authorization Header: null
+2025-08-05 13:27:06 [http-nio-8083-exec-9] WARN  c.v.a.s.JwtAuthenticationEntryPoint - Unauthorized access attempt: Full authentication is required to access this resource
+2025-08-05 13:27:06 [http-nio-8083-exec-5] INFO  c.v.a.s.JwtAuthenticationFilter - Invalid Authorization header value or header missing
+2025-08-05 13:27:06 [http-nio-8083-exec-6] INFO  c.v.a.s.JwtAuthenticationFilter - Invalid Authorization header value or header missing
+2025-08-05 13:27:06 [http-nio-8083-exec-3] INFO  c.v.a.s.JwtAuthenticationFilter - Invalid Authorization header value or header missing
+2025-08-05 13:27:06 [http-nio-8083-exec-10] WARN  c.v.a.s.JwtAuthenticationEntryPoint - Unauthorized access attempt: Full authentication is required to access this resource
+2025-08-05 13:27:06 [http-nio-8083-exec-4] WARN  c.v.a.s.JwtAuthenticationEntryPoint - Unauthorized access attempt: Full authentication is required to access this resource
+2025-08-05 13:27:08 [http-nio-8083-exec-2] WARN  c.v.a.s.JwtAuthenticationEntryPoint - Unauthorized access attempt: Full authentication is required to access this resource
+2025-08-05 13:27:33 [http-nio-8083-exec-7] WARN  c.v.a.s.JwtAuthenticationEntryPoint - Unauthorized access attempt: Full authentication is required to access this resource
+2025-08-05 13:27:34 [http-nio-8083-exec-8] WARN  c.v.a.s.JwtAuthenticationEntryPoint - Unauthorized access attempt: Full authentication is required to access this resource
+2025-08-05 13:27:35 [http-nio-8083-exec-1] WARN  c.v.a.s.JwtAuthenticationEntryPoint - Unauthorized access attempt: Full authentication is required to access this resource
+2025-08-05 13:27:36 [http-nio-8083-exec-9] WARN  c.v.a.s.JwtAuthenticationEntryPoint - Unauthorized access attempt: Full authentication is required to access this resource
+2025-08-05 13:27:37 [http-nio-8083-exec-5] INFO  c.v.a.s.JwtAuthenticationFilter - Authorization Header: null
+2025-08-05 13:27:37 [http-nio-8083-exec-3] INFO  c.v.a.s.JwtAuthenticationFilter - Authorization Header: null
+2025-08-05 13:27:37 [http-nio-8083-exec-5] INFO  c.v.a.s.JwtAuthenticationFilter - Invalid Authorization header value or header missing
+2025-08-05 13:27:37 [http-nio-8083-exec-10] INFO  c.v.a.s.JwtAuthenticationFilter - Authorization Header: null
+2025-08-05 13:27:37 [http-nio-8083-exec-3] INFO  c.v.a.s.JwtAuthenticationFilter - Invalid Authorization header value or header missing
+2025-08-05 13:27:37 [http-nio-8083-exec-10] INFO  c.v.a.s.JwtAuthenticationFilter - Invalid Authorization header value or header missing
+2025-08-05 13:27:37 [http-nio-8083-exec-6] INFO  c.v.a.s.JwtAuthenticationFilter - Authorization Header: null
+2025-08-05 13:27:37 [http-nio-8083-exec-10] INFO  com.vss.app.Service.CategoryService - Fetching all categories
+2025-08-05 13:27:37 [http-nio-8083-exec-4] WARN  c.v.a.s.JwtAuthenticationEntryPoint - Unauthorized access attempt: Full authentication is required to access this resource
+2025-08-05 13:27:37 [http-nio-8083-exec-6] INFO  c.v.a.s.JwtAuthenticationFilter - Invalid Authorization header value or header missing
+2025-08-05 13:27:37 [http-nio-8083-exec-2] INFO  c.v.a.s.JwtAuthenticationFilter - Authorization Header: null
+2025-08-05 13:27:37 [http-nio-8083-exec-2] INFO  c.v.a.s.JwtAuthenticationFilter - Invalid Authorization header value or header missing
+2025-08-05 13:27:37 [http-nio-8083-exec-2] INFO  com.vss.app.Service.CategoryService - Fetching all categories
+2025-08-05 13:27:37 [http-nio-8083-exec-7] INFO  c.v.a.s.JwtAuthenticationFilter - Authorization Header: null
+2025-08-05 13:27:37 [http-nio-8083-exec-7] INFO  c.v.a.s.JwtAuthenticationFilter - Invalid Authorization header value or header missing
+2025-08-05 13:28:40 [http-nio-8083-exec-7] INFO  c.v.a.s.JwtAuthenticationFilter - Authorization Header: null
+2025-08-05 13:28:40 [http-nio-8083-exec-8] INFO  c.v.a.s.JwtAuthenticationFilter - Authorization Header: null
+2025-08-05 13:28:40 [http-nio-8083-exec-7] INFO  c.v.a.s.JwtAuthenticationFilter - Invalid Authorization header value or header missing
+2025-08-05 13:28:40 [http-nio-8083-exec-2] INFO  c.v.a.s.JwtAuthenticationFilter - Authorization Header: null
+2025-08-05 13:28:40 [http-nio-8083-exec-8] INFO  c.v.a.s.JwtAuthenticationFilter - Invalid Authorization header value or header missing
+2025-08-05 13:28:40 [http-nio-8083-exec-2] INFO  c.v.a.s.JwtAuthenticationFilter - Invalid Authorization header value or header missing
+2025-08-05 13:28:40 [http-nio-8083-exec-6] INFO  c.v.a.s.JwtAuthenticationFilter - Authorization Header: null
+2025-08-05 13:28:40 [http-nio-8083-exec-6] INFO  c.v.a.s.JwtAuthenticationFilter - Invalid Authorization header value or header missing
+2025-08-05 13:28:40 [http-nio-8083-exec-9] INFO  c.v.a.s.JwtAuthenticationFilter - Authorization Header: null
+2025-08-05 13:28:40 [http-nio-8083-exec-9] INFO  c.v.a.s.JwtAuthenticationFilter - Invalid Authorization header value or header missing
+2025-08-05 13:28:40 [http-nio-8083-exec-9] INFO  com.vss.app.Service.CategoryService - Fetching all categories
+2025-08-05 13:28:40 [http-nio-8083-exec-3] INFO  c.v.app.controller.ProductController - Received request to get all products
+2025-08-05 13:28:40 [http-nio-8083-exec-3] INFO  com.vss.app.Service.ProductService - Fetching all products from the database
+2025-08-05 13:28:40 [http-nio-8083-exec-3] INFO  com.vss.app.Service.ProductService - Fetched 2 products
+2025-08-05 13:28:40 [http-nio-8083-exec-3] INFO  c.v.app.controller.ProductController - Returning 2 products
+2025-08-05 13:28:40 [http-nio-8083-exec-1] INFO  c.v.a.s.JwtAuthenticationFilter - Authorization Header: null
+2025-08-05 13:28:40 [http-nio-8083-exec-1] INFO  c.v.a.s.JwtAuthenticationFilter - Invalid Authorization header value or header missing
+2025-08-05 13:28:40 [http-nio-8083-exec-1] INFO  com.vss.app.Service.CategoryService - Fetching all categories
+2025-08-05 13:28:40 [http-nio-8083-exec-10] INFO  c.v.a.s.JwtAuthenticationFilter - Authorization Header: null
+2025-08-05 13:28:40 [http-nio-8083-exec-4] WARN  c.v.a.s.JwtAuthenticationEntryPoint - Unauthorized access attempt: Full authentication is required to access this resource
+2025-08-05 13:28:40 [http-nio-8083-exec-10] INFO  c.v.a.s.JwtAuthenticationFilter - Invalid Authorization header value or header missing
+2025-08-05 13:28:40 [http-nio-8083-exec-10] INFO  com.vss.app.Service.CategoryService - Fetching all categories
+2025-08-05 13:28:40 [http-nio-8083-exec-5] INFO  c.v.a.s.JwtAuthenticationFilter - Authorization Header: null
+2025-08-05 13:28:40 [http-nio-8083-exec-5] INFO  c.v.a.s.JwtAuthenticationFilter - Invalid Authorization header value or header missing

@@ -45,4 +45,41 @@
 2025-08-05T13:24:21.290+05:30  INFO 9372 --- [E-commerce] [           main] .s.b.a.l.ConditionEvaluationRep2025-08-05T13:28:06.920+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2025-08-05T13:28:06.922+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2025-08-05T13:28:06.930+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2025-08-05T13:28:06.992+05:30  INFO 16876 --- [E-commerce] [0.0-80
+2025-08-05T13:28:06.992+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-4] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: null
+2025-08-05T13:28:06.993+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-4] c.v.a.security.JwtAuthenticationFilter   : Invalid Authorization header value or header missing
+2025-08-05T13:28:07.104+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-4] c.vss.app.controller.VendorController    : Login attempt for email: ram@gmail.com
+2025-08-05T13:28:07.268+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-4] c.vss.app.service.VendorDetailsService   : Loading user by email: ram@gmail.com
+2025-08-05T13:28:07.329+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-4] c.vss.app.service.VendorDetailsService   : Loading user by email: ram@gmail.com
+2025-08-05T13:28:07.387+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-4] com.vss.app.security.JwtHelper           : Generated JWT token for subject: ram@gmail.com
+2025-08-05T13:28:07.387+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-4] c.vss.app.controller.VendorController    : Login successful for email: ram@gmail.com
+2025-08-05T13:28:07.438+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-8] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyYW1AZ21haWwuY29tIiwiaWF0IjoxNzU0MzgwNjg3LCJleHAiOjE3NTQzOTg2ODd9.UMKQRZEOZLS_LEuf1Jqz-d9ZX1IQG_W_37zpH4q-4SpzRVANOLEFcc2F_53LQxEtafHYBCP9grCMkK6JMGnmIQ
+2025-08-05T13:28:07.464+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-6] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyYW1AZ21haWwuY29tIiwiaWF0IjoxNzU0MzgwNjg3LCJleHAiOjE3NTQzOTg2ODd9.UMKQRZEOZLS_LEuf1Jqz-d9ZX1IQG_W_37zpH4q-4SpzRVANOLEFcc2F_53LQxEtafHYBCP9grCMkK6JMGnmIQ
+2025-08-05T13:28:07.464+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-5] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyYW1AZ21haWwuY29tIiwiaWF0IjoxNzU0MzgwNjg3LCJleHAiOjE3NTQzOTg2ODd9.UMKQRZEOZLS_LEuf1Jqz-d9ZX1IQG_W_37zpH4q-4SpzRVANOLEFcc2F_53LQxEtafHYBCP9grCMkK6JMGnmIQ
+2025-08-05T13:28:07.492+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-8] c.vss.app.service.VendorDetailsService   : Loading user by email: ram@gmail.com
+2025-08-05T13:28:07.501+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-6] c.vss.app.service.VendorDetailsService   : Loading user by email: ram@gmail.com
+2025-08-05T13:28:07.501+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-5] c.vss.app.service.VendorDetailsService   : Loading user by email: ram@gmail.com
+2025-08-05T13:28:07.505+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-8] com.vss.app.security.JwtHelper           : Token validation result for user ram@gmail.com : true
+2025-08-05T13:28:07.508+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-8] c.v.a.security.JwtAuthenticationFilter   : JWT Token validated successfully, authentication set for user: ram@gmail.com
+2025-08-05T13:28:07.507+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-5] com.vss.app.security.JwtHelper           : Token validation result for user ram@gmail.com : true
+2025-08-05T13:28:07.507+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-6] com.vss.app.security.JwtHelper           : Token validation result for user ram@gmail.com : true
+2025-08-05T13:28:07.508+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-5] c.v.a.security.JwtAuthenticationFilter   : JWT Token validated successfully, authentication set for user: ram@gmail.com
+2025-08-05T13:28:07.508+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-6] c.v.a.security.JwtAuthenticationFilter   : JWT Token validated successfully, authentication set for user: ram@gmail.com
+2025-08-05T13:28:07.511+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-6] c.vss.app.controller.DashBordController  : Fetching vendor todays stats
+2025-08-05T13:28:07.511+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-5] c.vss.app.controller.DashBordController  : Fetching vendor todays stats
+2025-08-05T13:28:07.511+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-8] c.vss.app.controller.DashBordController  : Fetching vendor dashboard stats
+2025-08-05T13:28:32.853+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-3] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyYW1AZ21haWwuY29tIiwiaWF0IjoxNzU0MzgwNjg3LCJleHAiOjE3NTQzOTg2ODd9.UMKQRZEOZLS_LEuf1Jqz-d9ZX1IQG_W_37zpH4q-4SpzRVANOLEFcc2F_53LQxEtafHYBCP9grCMkK6JMGnmIQ
+2025-08-05T13:28:32.853+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-4] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyYW1AZ21haWwuY29tIiwiaWF0IjoxNzU0MzgwNjg3LCJleHAiOjE3NTQzOTg2ODd9.UMKQRZEOZLS_LEuf1Jqz-d9ZX1IQG_W_37zpH4q-4SpzRVANOLEFcc2F_53LQxEtafHYBCP9grCMkK6JMGnmIQ
+2025-08-05T13:28:32.864+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-4] c.vss.app.service.VendorDetailsService   : Loading user by email: ram@gmail.com
+2025-08-05T13:28:32.864+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-3] c.vss.app.service.VendorDetailsService   : Loading user by email: ram@gmail.com
+2025-08-05T13:28:32.869+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-3] com.vss.app.security.JwtHelper           : Token validation result for user ram@gmail.com : true
+2025-08-05T13:28:32.869+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-4] com.vss.app.security.JwtHelper           : Token validation result for user ram@gmail.com : true
+2025-08-05T13:28:32.870+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-3] c.v.a.security.JwtAuthenticationFilter   : JWT Token validated successfully, authentication set for user: ram@gmail.com
+2025-08-05T13:28:32.870+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-4] c.v.a.security.JwtAuthenticationFilter   : JWT Token validated successfully, authentication set for user: ram@gmail.com
+2025-08-05T13:28:32.871+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-3] c.vss.app.controller.CategoryController  : Fetching all categories
+2025-08-05T13:28:32.871+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-3] com.vss.app.service.CategoryService      : Fetching all categories
+2025-08-05T13:28:32.871+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-4] c.vss.app.controller.ProductController   : Fetching all products for vendor ID: ram@gmail.com
+2025-08-05T13:28:32.874+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-4] c.vss.app.controller.ProductController   : Found 0 products for vendor ID: ram@gmail.com
+2025-08-05T13:28:33.587+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-2] c.v.a.security.JwtAuthenticationFilter   : Authorization Header: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyYW1AZ21haWwuY29tIiwiaWF0IjoxNzU0MzgwNjg3LCJleHAiOjE3NTQzOTg2ODd9.UMKQRZEOZLS_LEuf1Jqz-d9ZX1IQG_W_37zpH4q-4SpzRVANOLEFcc2F_53LQxEtafHYBCP9grCMkK6JMGnmIQ
+2025-08-05T13:28:33.596+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-2] c.vss.app.service.VendorDetailsService   : Loading user by email: ram@gmail.com
+2025-08-05T13:28:33.600+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-2] com.vss.app.security.JwtHelper           : Token validation result for user ram@gmail.com : true
+2025-08-05T13:28:33.600+05:30  INFO 16876 --- [E-commerce] [0.0-8084-exec-2] c.v.a.security.JwtAuthenticationFilter   : JWT Token validated successfully, authentication set for user: ram@gmail.com

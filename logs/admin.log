@@ -182,3 +182,30 @@ Action:
 
 Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
 
+2025-08-05 13:25:14 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-05 13:25:14 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-05 13:25:14 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-08-05 13:25:14 [http-nio-8080-exec-2] INFO  c.v.a.s.JwtAuthenticationFilter - Authorization Header: null
+2025-08-05 13:25:14 [http-nio-8080-exec-2] INFO  c.v.a.s.JwtAuthenticationFilter - Invalid Authorization header value or header missing
+2025-08-05 13:25:14 [http-nio-8080-exec-2] INFO  c.vss.app.controller.AdminController - Login attempt for email: admin@localhost.com
+2025-08-05 13:25:14 [http-nio-8080-exec-2] INFO  com.vss.app.service.AdminService - Authenticating user with email: admin@localhost.com
+2025-08-05 13:25:14 [http-nio-8080-exec-2] INFO  c.v.app.service.AdminDetailsService - Loading user by email: admin@localhost.com
+2025-08-05 13:25:14 [http-nio-8080-exec-2] WARN  c.v.app.service.AdminDetailsService - User not found with email: admin@localhost.com
+2025-08-05 13:25:14 [http-nio-8080-exec-2] WARN  com.vss.app.service.AdminService - Authentication failed for email: admin@localhost.com
+2025-08-05 13:25:14 [http-nio-8080-exec-2] WARN  c.vss.app.controller.AdminController - Login failed - Invalid credentials for email: admin@localhost.com
+2025-08-05 13:25:43 [http-nio-8080-exec-5] INFO  c.v.a.s.JwtAuthenticationFilter - Authorization Header: null
+2025-08-05 13:25:43 [http-nio-8080-exec-5] INFO  c.v.a.s.JwtAuthenticationFilter - Invalid Authorization header value or header missing
+2025-08-05 13:25:43 [http-nio-8080-exec-5] WARN  c.v.a.s.JwtAuthenticationEntryPoint - Unauthorized access attempt: Full authentication is required to access this resource
+2025-08-05 13:25:54 [http-nio-8080-exec-10] INFO  c.v.a.s.JwtAuthenticationFilter - Authorization Header: null
+2025-08-05 13:25:54 [http-nio-8080-exec-10] INFO  c.v.a.s.JwtAuthenticationFilter - Invalid Authorization header value or header missing
+2025-08-05 13:25:54 [http-nio-8080-exec-10] INFO  c.vss.app.controller.AdminController - Login attempt for email: admin@localhost.com
+2025-08-05 13:25:54 [http-nio-8080-exec-10] INFO  com.vss.app.service.AdminService - Authenticating user with email: admin@localhost.com
+2025-08-05 13:25:54 [http-nio-8080-exec-10] INFO  c.v.app.service.AdminDetailsService - Loading user by email: admin@localhost.com
+2025-08-05 13:25:54 [http-nio-8080-exec-10] WARN  c.v.app.service.AdminDetailsService - User not found with email: admin@localhost.com
+2025-08-05 13:25:54 [http-nio-8080-exec-10] WARN  com.vss.app.service.AdminService - Authentication failed for email: admin@localhost.com
+2025-08-05 13:25:54 [http-nio-8080-exec-10] WARN  c.vss.app.controller.AdminController - Login failed - Invalid credentials for email: admin@localhost.com
+2025-08-05 15:03:25 [http-nio-8080-exec-4] INFO  c.v.a.s.JwtAuthenticationFilter - Authorization Header: null
+2025-08-05 15:03:25 [http-nio-8080-exec-4] INFO  c.v.a.s.JwtAuthenticationFilter - Invalid Authorization header value or header missing
+2025-08-05 15:03:25 [http-nio-8080-exec-4] INFO  c.vss.app.controller.AdminController - Login attempt for email: admin@gmail.com
+2025-08-05 15:03:25 [http-nio-8080-exec-4] INFO  com.vss.app.service.AdminService - Authenticating user with email: admin@gmail.com
+2025-08-05 15:03:25 [http-nio-8080-exec-4] INFO  c.v.app.service.AdminDetailsService - Loading user by email: admin@gmail.com
